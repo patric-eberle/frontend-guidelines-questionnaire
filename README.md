@@ -15,7 +15,7 @@ A one-page questionnaire to help your team establish effective frontend guidelin
 - **Are you using a templating engine** *(such as [Mustache](https://mustache.github.io/), [Handlebars](http://handlebarsjs.com/), etc)*?
 - Yes: Vue Template Syntax.
 - **Does your backend architecture influence the frontend markup in any way** (for example, WordPress will add `wp-paginate` to a class in your markup)? If so, can you highlight these conventions? 
-- TODO: Must be defined by hybris developer.
+- No.
 
 ### HTML Style
 - **Spaces or Tabs?**
@@ -82,7 +82,7 @@ A one-page questionnaire to help your team establish effective frontend guidelin
 - **Are you using any polyfills or shims** *(such as [any of these](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills))*?
 - Yes. Depends on need. By default the polyfills are injected by the Babel ES2015 compiler during build.
 - **What third-party scripts are dependencies for your project** *(such as scripts for form validation, graphs, animation, etc)*?
-- TBD.
+- Depends on features.
 - **Do you test your JavaScript?** If so, what tools do you use *(such as [Jasmine](https://jasmine.github.io/), [Karma](https://github.com/karma-runner/karma), [Selenium](http://docs.seleniumhq.org/), etc)*?
 - Yes. By default we write custom tests for Mixins (extending functionality) and Services (sharing functionality) with [Jest](https://facebook.github.io/jest/)
 
@@ -125,7 +125,7 @@ A one-page questionnaire to help your team establish effective frontend guidelin
 - **How are you measuring your project's speed** *(such as [Pingdom Speed Test](http://tools.pingdom.com/) or [Google PageSpeed](https://developers.google.com/speed/pagespeed/))*?
 - [Google PageSpeed](https://developers.google.com/speed/pagespeed/), [Yellow Lab Tools](http://yellowlab.tools/)
 - **What techniques are you using to decrease file size** *(such as [Gzip](https://css-tricks.com/snippets/htaccess/active-gzip-compression/), [Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization))*?
-- JS minification and ugglyfication, [SVGO](https://github.com/svg/svgo)
+- JS minification and ugglyfication, [SVGO](https://github.com/svg/svgo), CSS minification
 - **What performance-related tools are you using in your workflow?** *(such as [WebPagetest](http://www.webpagetest.org/), [BigRig](https://aerotwist.com/blog/bigrig/) [Speedcurve](https://speedcurve.com/))*?
 - None.
 
@@ -158,13 +158,13 @@ A one-page questionnaire to help your team establish effective frontend guidelin
 - **What version control system are you using for your frontend code** *(such as [Git](https://git-scm.com/) or [Subversion](https://subversion.apache.org/))*?
 - GIT.
 - **Where is your version-controlled code hosted** *(such  as [Github](https://github.com/) or [Bitbucket](https://bitbucket.org/))*?
-- TBD.
+- Client Bitbucket.
 - **Do you use a version control workflow** *(such as [gitflow](http://nvie.com/posts/a-successful-git-branching-model/), [centralized](https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow), [feature-branch](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow), etc)*?
 - Yes: [gitflow](http://nvie.com/posts/a-successful-git-branching-model/), [Semver](https://semver.org/)
 - **Who's responsible for managing and governing the version controlled code?**?
 - TBD.
 - **Where are issues tracked?**
-- TBD.
+- Client Jira.
 
 -----------
 
@@ -176,15 +176,15 @@ It's important to recognize the difference between ["support" and "optimization"
 - **What devices are you *optimizing* for?**
 - TBD.
 - **Are you using a [graded browser support](https://github.com/yui/yui3/wiki/Graded-Browser-Support) system?**
-- TBD.
+- Normaly no but TBD.
 - **Are there specific components that require [more specific grading](https://www.filamentgroup.com/lab/grade-the-components.html)?**
-- TBD.
+- Normaly no but TBD.
 
 -----------
 
 ## Localization
 - **Is your website served in different languages?** If so, what considerations do you need to address when localizing for other languages?
-- TBD.
+- Yes.
 
 -----------
 
@@ -198,9 +198,9 @@ It's important to recognize the difference between ["support" and "optimization"
 - **Are you using a [pattern library tool](http://styleguides.io/tools.html) to document your front-end architecture?**
 - We're using [Vue styleguidist](https://github.com/vue-styleguidist/vue-styleguidist) and example pages to document components and layouts.
 - **Where does your documentation live?** What are the links to the documentation?
-- TBD.
+- TBD. (Readme, Living Styleguide)
 - **Who's responsible for maintaining and governing the documentation?**
-- TBD.
+- Developers.
 - **What happens when the guidelines are updated?**
 - TBD.
 
